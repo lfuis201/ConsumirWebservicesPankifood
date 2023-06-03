@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PruebaConexion">
+        <s:complexType />
+      </s:element>
+      <s:element name="PruebaConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PruebaConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Read_telefonos">
+        <s:complexType />
+      </s:element>
+      <s:element name="Read_telefonosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Read_telefonosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insertar_Telefono">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insertar_TelefonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Insertar_TelefonoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_Telefono">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_TelefonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Actualizar_TelefonoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_Telefono">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Eliminar_TelefonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Eliminar_TelefonoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PruebaConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:PruebaConexion" />
+  </wsdl:message>
+  <wsdl:message name="PruebaConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:PruebaConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Read_telefonosSoapIn">
+    <wsdl:part name="parameters" element="tns:Read_telefonos" />
+  </wsdl:message>
+  <wsdl:message name="Read_telefonosSoapOut">
+    <wsdl:part name="parameters" element="tns:Read_telefonosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoSoapIn">
+    <wsdl:part name="parameters" element="tns:Insertar_Telefono" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoSoapOut">
+    <wsdl:part name="parameters" element="tns:Insertar_TelefonoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoSoapIn">
+    <wsdl:part name="parameters" element="tns:Actualizar_Telefono" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoSoapOut">
+    <wsdl:part name="parameters" element="tns:Actualizar_TelefonoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoSoapIn">
+    <wsdl:part name="parameters" element="tns:Eliminar_Telefono" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoSoapOut">
+    <wsdl:part name="parameters" element="tns:Eliminar_TelefonoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PruebaConexionHttpGetIn" />
+  <wsdl:message name="PruebaConexionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Read_telefonosHttpGetIn" />
+  <wsdl:message name="Read_telefonosHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoHttpGetIn">
+    <wsdl:part name="telefono" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+    <wsdl:part name="telefono" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PruebaConexionHttpPostIn" />
+  <wsdl:message name="PruebaConexionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Read_telefonosHttpPostIn" />
+  <wsdl:message name="Read_telefonosHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoHttpPostIn">
+    <wsdl:part name="telefono" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Insertar_TelefonoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+    <wsdl:part name="telefono" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_TelefonoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Eliminar_TelefonoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="webconecctSoap">
+    <wsdl:operation name="PruebaConexion">
+      <wsdl:input message="tns:PruebaConexionSoapIn" />
+      <wsdl:output message="tns:PruebaConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <wsdl:input message="tns:Read_telefonosSoapIn" />
+      <wsdl:output message="tns:Read_telefonosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <wsdl:input message="tns:Insertar_TelefonoSoapIn" />
+      <wsdl:output message="tns:Insertar_TelefonoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <wsdl:input message="tns:Actualizar_TelefonoSoapIn" />
+      <wsdl:output message="tns:Actualizar_TelefonoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <wsdl:input message="tns:Eliminar_TelefonoSoapIn" />
+      <wsdl:output message="tns:Eliminar_TelefonoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="webconecctHttpGet">
+    <wsdl:operation name="PruebaConexion">
+      <wsdl:input message="tns:PruebaConexionHttpGetIn" />
+      <wsdl:output message="tns:PruebaConexionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <wsdl:input message="tns:Read_telefonosHttpGetIn" />
+      <wsdl:output message="tns:Read_telefonosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <wsdl:input message="tns:Insertar_TelefonoHttpGetIn" />
+      <wsdl:output message="tns:Insertar_TelefonoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <wsdl:input message="tns:Actualizar_TelefonoHttpGetIn" />
+      <wsdl:output message="tns:Actualizar_TelefonoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <wsdl:input message="tns:Eliminar_TelefonoHttpGetIn" />
+      <wsdl:output message="tns:Eliminar_TelefonoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="webconecctHttpPost">
+    <wsdl:operation name="PruebaConexion">
+      <wsdl:input message="tns:PruebaConexionHttpPostIn" />
+      <wsdl:output message="tns:PruebaConexionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <wsdl:input message="tns:Read_telefonosHttpPostIn" />
+      <wsdl:output message="tns:Read_telefonosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <wsdl:input message="tns:Insertar_TelefonoHttpPostIn" />
+      <wsdl:output message="tns:Insertar_TelefonoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <wsdl:input message="tns:Actualizar_TelefonoHttpPostIn" />
+      <wsdl:output message="tns:Actualizar_TelefonoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <wsdl:input message="tns:Eliminar_TelefonoHttpPostIn" />
+      <wsdl:output message="tns:Eliminar_TelefonoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="webconecctSoap" type="tns:webconecctSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PruebaConexion">
+      <soap:operation soapAction="http://tempuri.org/PruebaConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <soap:operation soapAction="http://tempuri.org/Read_telefonos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <soap:operation soapAction="http://tempuri.org/Insertar_Telefono" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <soap:operation soapAction="http://tempuri.org/Actualizar_Telefono" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <soap:operation soapAction="http://tempuri.org/Eliminar_Telefono" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webconecctSoap12" type="tns:webconecctSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PruebaConexion">
+      <soap12:operation soapAction="http://tempuri.org/PruebaConexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <soap12:operation soapAction="http://tempuri.org/Read_telefonos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <soap12:operation soapAction="http://tempuri.org/Insertar_Telefono" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <soap12:operation soapAction="http://tempuri.org/Actualizar_Telefono" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <soap12:operation soapAction="http://tempuri.org/Eliminar_Telefono" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webconecctHttpGet" type="tns:webconecctHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="PruebaConexion">
+      <http:operation location="/PruebaConexion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <http:operation location="/Read_telefonos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <http:operation location="/Insertar_Telefono" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <http:operation location="/Actualizar_Telefono" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <http:operation location="/Eliminar_Telefono" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webconecctHttpPost" type="tns:webconecctHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="PruebaConexion">
+      <http:operation location="/PruebaConexion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read_telefonos">
+      <http:operation location="/Read_telefonos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_Telefono">
+      <http:operation location="/Insertar_Telefono" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_Telefono">
+      <http:operation location="/Actualizar_Telefono" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_Telefono">
+      <http:operation location="/Eliminar_Telefono" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="webconecct">
+    <wsdl:port name="webconecctSoap" binding="tns:webconecctSoap">
+      <soap:address location="http://localhost:8081/webconecct.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webconecctSoap12" binding="tns:webconecctSoap12">
+      <soap12:address location="http://localhost:8081/webconecct.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webconecctHttpGet" binding="tns:webconecctHttpGet">
+      <http:address location="http://localhost:8081/webconecct.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webconecctHttpPost" binding="tns:webconecctHttpPost">
+      <http:address location="http://localhost:8081/webconecct.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

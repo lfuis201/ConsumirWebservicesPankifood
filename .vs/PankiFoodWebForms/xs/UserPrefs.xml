@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{72275F92-E8E5-4122-887F-13E8AD892921}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PankiFoodWebForms/EliminarAlimento.aspx.cs">
+    <Files>
+      <File FileName="PankiFoodWebForms/EliminarAlimento.aspx" Line="19" Column="1" />
+      <File FileName="PankiFoodWebForms/ListarAlimento.aspx" Line="35" Column="1" />
+      <File FileName="PankiFoodWebForms/CrearAlimento.aspx" Line="31" Column="1" />
+      <File FileName="PankiFoodWebForms/ActualizarAlimento.aspx" Line="26" Column="1" />
+      <File FileName="PankiFoodWebForms/ListarAlimento.aspx.cs" Line="45" Column="1" />
+      <File FileName="PankiFoodWebForms/CrearAlimento.aspx.cs" Line="31" Column="1" />
+      <File FileName="PankiFoodWebForms/ActualizarAlimento.aspx.cs" Line="36" Column="1" />
+      <File FileName="PankiFoodWebForms/EliminarAlimento.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="PankiFoodWebForms/EliminarAlimento.aspx.cs" Line="28" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PankiFoodWebForms" expanded="True">
+            <Node name="PankiFoodWebForms" expanded="True">
+              <Node name="ActualizarAlimento.aspx" expanded="True" />
+              <Node name="CrearAlimento.aspx" expanded="True" />
+              <Node name="EliminarAlimento.aspx" expanded="True">
+                <Node name="EliminarAlimento.aspx.cs" selected="True" />
+              </Node>
+              <Node name="ListarAlimento.aspx" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PankiFoodWebForms.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.PankiFoodWebForms PreferredExecutionTarget="mousepad" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

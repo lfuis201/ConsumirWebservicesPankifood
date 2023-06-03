@@ -1,0 +1,9 @@
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/bin/PankiFoodWebForms.dll
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/bin/PankiFoodWebForms.pdb
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/obj/Debug/PankiFoodWebForms.csproj.AssemblyReference.cache
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/obj/Debug/PankiFoodWebForms.csproj.CoreCompileInputs.cache
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/obj/Debug/PankiFoodWebForms.dll
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/obj/Debug/PankiFoodWebForms.pdb
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/bin/Newtonsoft.Json.dll
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/bin/Newtonsoft.Json.xml
+/home/luisfelipe/Projects/PankiFoodWebForms/PankiFoodWebForms/obj/Debug/PankiFoodWebForms.csproj.CopyComplete
