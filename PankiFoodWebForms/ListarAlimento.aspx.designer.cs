@@ -9,10 +9,38 @@
 //------------------------------------------------------------------------------
 
 namespace PankiFoodWebForms {
-	
-	
-	public partial class ListarAlimento {
-		
-		protected System.Web.UI.HtmlControls.HtmlForm form1;
-	}
+    
+    
+    public partial class ListarAlimento {
+        
+        protected System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        protected System.Web.UI.WebControls.TextBox txtNombre;
+        
+        protected System.Web.UI.WebControls.TextBox txtDescripcion;
+        
+        protected System.Web.UI.WebControls.TextBox txtPrecio;
+        
+        protected System.Web.UI.WebControls.Button btnGuardar;
+        
+        protected System.Web.UI.WebControls.TextBox txtIdActualizar;
+        
+        protected System.Web.UI.WebControls.TextBox txtNombreActualizar;
+        
+        protected System.Web.UI.WebControls.TextBox txtDescripcionActualizar;
+        
+        protected System.Web.UI.WebControls.TextBox txtPrecioActualizar;
+        
+        protected System.Web.UI.WebControls.Button btnActualizar;
+        
+        protected System.Web.UI.WebControls.TextBox lblIdEliminar;
+        
+        protected System.Web.UI.WebControls.TextBox lblNombreEliminar;
+        
+        protected System.Web.UI.WebControls.TextBox lblDescripcionEliminar;
+        
+        protected System.Web.UI.WebControls.TextBox lblPrecioEliminar;
+        
+        protected System.Web.UI.WebControls.Button btnEliminar;
+    }
 }
